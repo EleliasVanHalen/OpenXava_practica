@@ -33,4 +33,9 @@ public class Producto {
     String observaciones;
 
 
+    @ManyToOne(fetch=FetchType.LAZY)
+    @DescriptionsList
+    Autor autor;
+
+
 }
